@@ -1,4 +1,21 @@
 window.onload=function(){
+	var MUS=$('#music_bg').get(0);//转化成JQ
+
+	touch.on('#music_btn','tap',function(){
+		if(	MUS.paused){
+
+			$("#music_btn").addClass("box");
+
+			MUS.play();	
+		}else{
+
+			$("#music_btn").removeClass("box");
+
+			MUS.pause();
+	
+		}
+	})
+
 	var mySwiper = new Swiper ('.swiper-container', {
 	    direction: 'vertical',
 	    // loop: true,
@@ -19,22 +36,6 @@ window.onload=function(){
 	    } 
 	})
 
-var MUS=$('#music_bg').get(0);//转化成JQ
-
-	touch.on('#music_btn','tap',function(){
-		if(	MUS.paused){
-
-			$("#music_btn").addClass("box");
-
-			MUS.play();	
-		}else{
-
-			$("#music_btn").removeClass("box");
-
-			MUS.pause();
-	
-		}
-	})
 
 
 
