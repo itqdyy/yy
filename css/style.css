@@ -3,6 +3,7 @@
 	max-width:1024px;
 	min-width:320px;
 	height: 100%;
+	max-height:768px;
 	margin: 0 auto;
 	overflow: hidden;
 }
