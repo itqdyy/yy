@@ -1,8 +1,8 @@
 #wrap{
-	
 	max-width:1024px;
 	min-width:320px;
-	height: 100%;
+	height: 768;
+	min-height:504px;
 	max-height:768px;
 	margin: 0 auto;
 	overflow: hidden;
